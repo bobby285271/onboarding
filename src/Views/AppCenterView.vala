@@ -55,7 +55,7 @@ public class Onboarding.AppCenterView : AbstractOnboardingView {
         appcenter_button.clicked.connect (() => {
             try {
                 var appcenter = AppInfo.create_from_commandline (
-                    "io.elementary.appcenter",
+                    "@appcenter@/bin/io.elementary.appcenter",
                     "AppCenter",
                     AppInfoCreateFlags.SUPPORTS_STARTUP_NOTIFICATION
                 );
